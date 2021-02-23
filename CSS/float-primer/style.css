@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+header {
+    background-color: orangered;
+    color: white;
+    padding: 30px;
+}
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.left, .right {
+    width: 20%;
+    float: left;
+    background-color: lightgray;
+    height: 300px;
+}
+.main {
+    background-color: navy;
+    padding: 30px;
+    float: left;
+    width: 60%;
+    color: white;
+    height: 300px;
+}
+footer {
+    background-color: orangered;
+    color: white;
+    padding: 30px;
+}
