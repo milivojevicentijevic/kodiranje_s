@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+}
+article {
+    border: 2px solid red;
+    width: 400px;
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+    margin: 100px auto 0 auto;
+    outline: 30px solid blue;
+}
