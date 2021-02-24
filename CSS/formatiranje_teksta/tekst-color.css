@@ -1,0 +1,13 @@
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+p {
+    color: blue;
+}
+ul {
+    color: red;
+}
