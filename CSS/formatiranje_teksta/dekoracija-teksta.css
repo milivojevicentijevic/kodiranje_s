@@ -1,0 +1,15 @@
+body {
+    font-size: 30px;
+}
+.underline {
+    text-decoration: underline;
+}
+.overline {
+    text-decoration: underline;
+}
+.kombinovano {
+    text-decoration: underline overline;
+}
+.strike {
+    text-decoration: line-through;
+}
