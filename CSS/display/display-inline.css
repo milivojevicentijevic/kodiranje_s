@@ -1,3 +1,10 @@
+body {
+    font-size: 25px;
+}
+span {
+    font-size: 20px;
+    color: red;
+}
 .inline {
     border: 3px solid blue;
     display: inline;
