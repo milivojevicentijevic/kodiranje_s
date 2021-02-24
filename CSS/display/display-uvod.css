@@ -1,0 +1,17 @@
+body {
+    font-size: 30px;
+}
+.block {
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+.inline-block {
+    border: 5px solid blue;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+.inline {
+    border: 5px solid green;
+}
