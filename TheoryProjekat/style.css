@@ -190,3 +190,22 @@ hgroup h4 span {
 .blog p {
     padding: 15px 0;
 }
+/* footer */
+footer .container {
+    padding: 50px 0;
+    border-top: 1px solid var(--lightGray);
+}
+footer .container div:first-child {
+    float: left;
+}
+footer .container div:last-child {
+    float: right;
+}
+footer a {
+    color: var(--blue);
+    font-size: 1.25rem;
+    margin: 0 8px;
+}
+footer a:hover {
+    color: var(--gray);
+}
