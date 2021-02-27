@@ -17,6 +17,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--fontFamily);
     font-size: var(--font-size);
@@ -138,3 +141,26 @@ article {
     background-color: var(--primary);
     color: var(--white);   
 }
+/* footer */
+footer {
+    background-color: var(--primary);
+    color: var(--lightGray);
+    text-align: center;
+    padding: var(--padding-Y);
+}
+footer p a {
+    text-decoration: underline;
+    color: var(--white);
+}
+footer p a {
+    color: var(--secondary);
+}
+footer ul {
+    display: flex;
+    width: 30%;
+    margin: 30px auto;
+}
+footer ul li a:hover {
+    background-color: none;
+}
+
