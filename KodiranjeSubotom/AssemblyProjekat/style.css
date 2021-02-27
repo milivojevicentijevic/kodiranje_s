@@ -35,12 +35,13 @@ a {
     margin: 0 auto;
 }
 .btn {
-   padding: 10px 25px;
+   padding: 15px 25px;
    font-size: 1.2rem; 
    background-color: var(--secondary);
    color: var(--white);
    border: none;
    transition: var(--transition);
+   margin-top: 30px;
 }
 .btn:hover {
     background-color: var(--white);
@@ -49,6 +50,14 @@ a {
 .blue {
     background-color: var(--secondary);
     color: var(--white);
+}
+h2 {
+    font-size: 3rem;
+}
+.lead {
+    font-size: 1.3rem;
+    opacity: .8;
+    margin-bottom: 30px;
 }
 /* header */
 header {
@@ -88,6 +97,44 @@ hgroup h1 {
 }
 hgroup p {
     color: rgba(255,255,255,.7);
-    font-size: 2rem;
-    margin: 30px 0 50px 0;
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+}
+/* first */
+.first {
+    padding: var(--padding-Y);
+    text-align: center;
+}
+article {
+    display: flex;
+}
+.col {
+    flex: 0 0 33%;
+    padding: 20px;
+}
+.first .btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+/* second */
+.second {
+    padding: var(--padding-Y);
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.second a{
+    color: var(--white);
+    text-decoration: underline;
+}
+.second button {
+    background-color: var(--white);
+    color: var(--secondary);
+    padding: 20px 35px; 
+    margin-top: 30px;
+    font-size: 1.25rem;
+}
+.second button:hover {
+    background-color: var(--primary);
+    color: var(--white);   
 }
