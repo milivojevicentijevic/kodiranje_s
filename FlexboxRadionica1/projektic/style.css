@@ -88,6 +88,7 @@ intro
 .intro .row:nth-child(2) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .intro .col {
     flex: 0 0 30%;
@@ -106,6 +107,7 @@ blog
 .blog .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .blog img {
     width: 100%;
@@ -139,4 +141,31 @@ footer hr {
     height: 1px;
     width: 50%;
     margin: 30px auto;
+}
+
+/***************
+responsive
+***************/
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+    .intro h2 {
+        font-size: 2rem;
+    }
+    .intro .col {
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+    }
+    .blog .col {
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+    }
+
 }
