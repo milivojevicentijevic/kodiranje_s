@@ -61,3 +61,52 @@ nav ul {
 nav ul li a {
     margin-left: 50px;
 }
+button {
+    padding: 20px 30px;
+    font-size: 1rem;
+    background-color: var(--pink);
+    border: none;
+    color: var(--bela);
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--violet);
+    transition: var(--transition);
+}
+/******************************
+header
+******************************/
+header {
+    background-color: var(--tamnoPlava);
+    color: var(--bela);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+header .col {
+    flex: 1;
+}
+header .col:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+header .col:first-child h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+header .col:first-child h1 span{
+    color: var(--pink);
+}
+header .col:first-child p {
+    padding: 20px 0;
+}
+header .col:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
