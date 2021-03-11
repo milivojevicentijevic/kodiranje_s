@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Scope</h1>
+    <p>Mesto vidljivosti varijable</p>
+    <hr>
+    <script>
+        // var globalVar = 'Vidljivost svuda';
+        // console.log(globalVar);
+
+        // function mojaF() {
+        //     console.log(globalVar);
+        // }
+        // mojaF();
+        
+        var mojaVarijabla = 'Vazi svuda';
+        function lokalnaVar() {
+            var mojaVarijabla = 'Samo u okviru funkcije';
+            console.log(mojaVarijabla);
+        }
+        lokalnaVar();
+    </script>
+</body>
+</html>
