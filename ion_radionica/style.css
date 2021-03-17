@@ -174,3 +174,34 @@ ABOUT
 	margin-top: 20px;
 	letter-spacing: 1.5px;
 }
+/****************
+SLIDER
+****************/
+.slider {
+	background-color: var(--secondary);
+	color: var(--white);
+	text-align: center;
+}
+.slider hgroup {
+	margin-bottom: 50px;
+}
+.slider hgroup h2 {
+	font-size: 2.4rem;
+}
+.slider hgroup h4 {
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	margin-top: 20px;
+}
+.slide-text {
+	margin-top: 25px;
+}
+.slide-text h4 {
+	font-size: 1.8rem;
+	letter-spacing: 1.5px;
+}
+.slide-text p {
+	margin: 20px;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
