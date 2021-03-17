@@ -231,6 +231,21 @@ THREE
 	line-height: 1.8;
 }
 .three aside {
-	flex: 0 0 25%;
-	border: 1px solid black;
+	flex: 0 0 15%;
+	color: var(--primary);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+aside h3 {
+	font-size: 2.4rem;
+}
+aside i {
+	font-size: 3rem;
+	transition: var(--transition);
+}
+aside i:hover {
+	color: var(--text-color);
+	transform: rotate(360deg) scale(1.1);
 }
