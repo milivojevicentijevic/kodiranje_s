@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+        }
+        .obavestenje {
+            background-color: black;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 160px;
+            left: 0;
+        }
+        .obavestenje a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ulancavanje - Chaining</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam autem eos? Magni nemo velit facere suscipit. Est odit quisquam, molestiae vitae adipisci ipsa id quaerat maiores quibusdam obcaecati magnam.</p>
+    <div class="obavestenje">Dobro dosli na nas sajt, mozete se <a href="">prijaviti za novosti</a> </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
+    <script>
+        // $('.obavestenje').delay(3000);
+        // $('.obavestenje').slideDown();
+        // $('.obavestenje').delay(3000);
+        // $('.obavestenje').fadeOut();
+        $('.obavestenje').delay(3000).slideDown().delay(3000).fadeOut();
+    </script>
+</body>
+</html>
