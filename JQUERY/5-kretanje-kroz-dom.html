@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    <h1>Kretanje kroz DOM - Traversing</h1>
+    <hr>
+    <h2>Prvi naslov</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, excepturi debitis. Assumenda quisquam minus fugiat fuga? Earum error reprehenderit accusantium, quasi quos dolorem, corrupti, quo officiis dignissimos repellendus ratione enim.</p>
+    <ul class="neuredjena">
+        <li>Elemenat</li>
+        <li>Elemenat</li>
+        <li class="izdvojen">Elemenat</li>
+        <li>Elemenat</li>
+    </ul>
+    <h2>Drugi naslov</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta molestiae facere quam quas pariatur velit veritatis. Dolores beatae quam reprehenderit cupiditate eius quis voluptate ratione quo? Dignissimos, ducimus veritatis.</p>
+    <ol class="uredjena">
+        <li>Elemenat 1</li>
+        <li class="izdvojen">Elemenat 2</li>
+        <li>Elemenat 3</li>
+        <li>Elemenat 4</li>
+    </ol>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
+    <script>
+        $('li').css('color','blue');
+        $('li').filter('.izdvojen').css('color','red');
+        $('ul').find('li').css('color','orangered');
+        $('ol').find('li').css('color','green');
+        $('.izdvojen').next().css('backgroundColor','blue');
+        $('.izdvojen').prev().css('backgroundColor','yellow');
+        $('ol').children().css('color','black');
+        $('li').parent().css('backgroundColor','lightgray');
+        $('li').not('.izdvojen').css('backgroundColor','violet');
+    </script>
+</body>
+</html>
