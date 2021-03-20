@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+:root {
+    --primary: #6b58ff;
+    --accents: #01fdfe;
+    --fontSize: 16px;
+    --white: #fff;
+    --fontFamily: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+}
+header {
+    background-image: url(img/header.jpg);
+    height: 70vh;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+h1 {
+    color: var(--white);   
+    font-size: 8rem;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+}
