@@ -4,9 +4,12 @@
     --accents: #01fdfe;
     --fontSize: 16px;
     --white: #fff;
+    --black: #000;
     --fontFamily: 'Source Sans Pro', sans-serif;
 }
-
+/***************
+basics 
+***************/
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +18,11 @@
 body {
     font-size: var(--fontSize);
     font-family: var(--fontFamily);
+    line-height: 1.5;
 }
+/***************
+header
+***************/
 header {
     background-image: url(img/header.jpg);
     height: 70vh;
@@ -29,4 +36,22 @@ h1 {
     position: absolute;
     top: 22%;
     left: 20%;
+}
+/***************
+footer
+***************/
+footer {
+    background-image: url(img/footer.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer p {
+    font-size: 1.3rem;
+    color: var(--white);
+    text-shadow: 0 0 2px var(--black);
 }
