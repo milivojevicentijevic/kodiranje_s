@@ -87,9 +87,11 @@ nav .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 nav .container ul {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 nav .container ul li {
@@ -167,6 +169,7 @@ ABOUT
 .about .wrapper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .card {
 	flex: 0 0 28%;
@@ -223,6 +226,7 @@ SLIDER
 }
 .slider .item {
 	display: flex;
+	flex-wrap: wrap;
 }
 .slide-card {
 	flex: 0 0 60%;
@@ -250,6 +254,7 @@ THREE
 .three {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .three article {
 	flex: 0 0 70%;
@@ -274,6 +279,7 @@ THREE
 	color: var(--primary);
 	text-align: center;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -282,13 +288,16 @@ aside h3 {
 }
 .card-social {
 	position: relative;
-	height: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
+	flex: 0 0 15%;
 }
-aside hr {
+.card-social hr {
 	border: 1px solid var(--primary);
+	width: 100%;
 }
 .card-text {
 	position: absolute;
@@ -324,4 +333,111 @@ footer p span {
 	margin: 0 20px;
 	border-left: 1px solid var(--white);
 	border-right: 1px solid var(--white);
+}
+/****************
+RESPONSIVE
+****************/
+@media (max-width: 500px) {
+	.container {
+		width: 90%;
+	}
+	.btn {
+		padding: 5px 20px;
+		font-size: 1rem;
+		letter-spacing: 1.2px;
+	}
+	nav .container {
+		justify-content: center;
+	}
+	nav .container ul li {
+		margin: 0 5px;
+		padding: 8px;
+	}
+	nav ul li a {
+		letter-spacing: 1px;
+	}
+	header hgroup h1 {
+		font-size: 2.5rem;
+	}
+	header hgroup h4 {
+		font-size: 1.4rem;
+	}
+	header hgroup button {
+		margin: 0 15px;
+	}
+	.about hgroup h2 {
+		font-size: 1.8rem;
+	}
+	.about hgroup h4 {
+		font-size: 1.4rem;
+	}
+	.about .wrapper {
+		justify-content: center;
+	}
+	.about .card {
+		flex: 0 0 100%;
+		margin-bottom: 30px;
+	}
+	.slider hgroup h2 {
+		font-size: 1.8rem;
+	}
+	.slider hgroup h4 {
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+	}
+	.slide-card {
+		flex: 0 0 100%;
+	}
+	.slide-text {
+		margin-top: 25px;
+		flex: 0 0 100%;
+	}
+	.slide-text h4 {
+		font-size: 1.4rem;
+	}
+	.slide-text p {
+		line-height: 1.4;
+		font-size: 1.1rem;
+	}
+	.three article {
+		flex: 0 0 100%;
+		padding: 30px 0;
+	}
+	.three article h2 {
+		font-size: 1.8rem;
+	}
+	.three article p {
+		font-size: 1rem;
+		letter-spacing: 1px;
+		line-height: 1.6;
+	}
+	.three aside {
+		flex: 0 0 100%;
+		flex-direction: row;
+		height: 100%;
+	}
+	aside h3 {
+		font-size: 2.2rem;
+		flex: 0 0 100%;
+		margin-bottom: 40px;
+	}
+	.card-social {
+		flex: 0 0 45%;
+		flex-direction: column;
+		height: 100px;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.card-social hr {
+		width: 100%;
+	}
+	footer p {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.7;
+	}
+	footer p span {
+		margin: 0 auto;
+		border: none;
+	}
 }
