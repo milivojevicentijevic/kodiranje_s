@@ -335,6 +335,55 @@ footer p span {
 	border-right: 1px solid var(--white);
 }
 /****************
+SIGN UP
+****************/
+.sign-up {
+	background-image: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 82vh;
+	color: var(--white);
+	text-align: center;
+}
+.sign-up h2 {
+	font-size: 2.5rem;
+}
+.sign-up form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	background-color: rgba(228, 52, 228, .37);
+	margin: 30px auto;
+	padding: 30px;
+	border-radius: 50px;
+}
+.sign-up form h3 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.sign-up form label {
+	position: relative;
+	margin-bottom: 30px;
+}
+.sign-up form label i {
+	color: black;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.4rem;
+}
+.sign-up form label input {
+	padding: 8px 0px 8px 40px;
+	font-size: 1rem;
+}
+.sign-up form label input::placeholder {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+/****************
 RESPONSIVE
 ****************/
 @media (max-width: 500px) {
